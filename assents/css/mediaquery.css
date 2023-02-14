@@ -1,0 +1,27 @@
+@media (max-width: 1024px) {
+
+    .newItem{
+        width: 40vw;
+    }
+    .divTable{
+        width: 47vw;
+    }
+}
+@media (max-width: 500px) {
+    main{
+        overflow: hidden;
+    }
+
+    table{
+        width: 100px;
+    }
+    .resume{
+        width: 100px;
+    }
+    .newItem{
+        width: 200px;
+    }
+    .divTable{
+        width: 280px;
+    }
+}

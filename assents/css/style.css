@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+}
+
+body {
+    max-width: 100%;
+    height:100vh ;
+    background:  #947DE8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    background-color: #820ad1;
+    padding: 1em;
+    border-radius: 10px;
+    width: 15em;
+    height: 25em;
+    box-shadow: 5px 8px 8px #000;
+}
+img[alt=mastercard]{
+    width: 30%;
+}
+img[alt=chip]{
+    width: 40%;
+    transform: rotate(90deg);
+}
+
+.footer img{
+    width: 35%;
+}
+.footer{
+    height: 30%;
+}
+
+.box-img{
+    display: flex;
+    align-items: flex-start;
+}
+
+
+#popup{
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1000;
+    background-color: #831d1c;
+    width: 220px;
+    padding: 40px 50px 50px;
+    box-shadow: 0 15px 30px #05040456;
+    transition: .5s;
+    visibility: hidden;
+    display: flex;
+
+}
+
+#popup.active {
+    visibility: visible;
+    top: 50%;
+}
+
+button {
+    border: none;
+    border-radius: 9px;
+    transition: 0.3s;
+}
+
+button:disabled{
+    cursor: not-allowed;
+    background: #555b69;
+}
+
+.success{
+    color: greenyellow;
+}
+
+.error{
+    color: tomato;
+}
+#popup .close{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.resume {
+    display: flex;
+    gap: 40px;
+    max-width: 500px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.resume >div{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px rgba(5, 5, 5, .9);
+    border-radius: 10px;
+    padding: 10px;
+    width: 180px;
+}
+
+.newItem{
+    position: relative;
+    max-width: 500px;
+    padding: 40px 50px 50px;
+    background-color:rgba(5, 5, 5, .9);
+    color: #fff;
+    cursor: pointer;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.divDesc, .divType, .divAmount{
+    display: flex;
+    flex-direction: column;
+}
+
+.divTable{
+    max-width: 290px;
+    display: flex;
+    justify-content: center;
+    background-color:rgba(5, 5, 5, .9);
+    padding: 5px 13px;
+}
+
+table{
+    width: 30px;
+    padding: 30px 150px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+th{
+    text-align: start;
+    border-bottom: inset;
+    padding-bottom: 5px;
+}
+
+i{
+    font-size: 35px;
+    left: 180;
+    padding: 10px 10px;
+}
+
+.container-popup{
+    width: 450px;
+    height:450px;
+    padding: 5px;
+    right: 50px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+form{
+    position: absolute;
+    margin-top: 110px;
+    transition: .5s;
+    width: 200px;
+    height: 400px;
+}
+
+input[type="text"], input[type="password"] {
+    border: none;   
+    outline: none;
+    width: 80%;
+    margin-top: 30px;
+    border-radius: 60px;
+    padding: 8px 0 8px 35px ;
+}
+
+
+.divCheck{
+    width: 80%;
+    margin: 10px 0 0 5px;
+    font-size: 13px;
+}
+
+#signin{
+    left: 25px;
+}
+#signup{
+    left: 450px;
+}
+.bxs-chevron-up-circle{
+    color: #00c90a;
+}
+.bxs-chevron-down-circle{
+    color: #d83121;
+}
+
+.columnAction{
+    width: 40px;
+    text-align: center;
+}
+
+.columnAction>button{
+    background: transparent;
+    border: none;
+}
+.columnAmount{
+    width:30%;
+}
+
+.columnType{
+    width: 80px;
+    text-align: center;
+}
+

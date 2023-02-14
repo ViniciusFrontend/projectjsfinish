@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assents/css/style.css">
+    <link rel="stylesheet" href="assents/css/relogio.css">
+    <link rel="stylesheet" href="assents/css/mediaquery.css">
+    <link rel="stylesheet" href="assents/css/button.css">
+    <title>Relogio digital</title>
+    <script src="https://kit.fontawesome.com/cf6fa412bd.js" crossorigin="anonymous"></script>
+    <link  href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+    <div class="relogio">
+        <div>
+            <span id="horas">00</span>
+            <span class="tempo">Horas</span>
+        </div>
+        <div>
+            <span id="minutos">00</span>
+            <span class="tempo">Minutos</span>
+        </div>
+        <div>
+            <span id="segundos">00</span>
+            <span class="tempo">Segundos</span>
+        </div>
+    </div>
+    <br>
+    <a href="#" class="btn" id="btnOpen">Abrir cadastro</a>
+
+        <div id="popup">
+            <div class="container-popup">
+                <div class="buttonsForm">  
+                    <div class="btnColor"></div>
+                <button id="btnSignin">Sign in</button>
+                <button id="btnSignup">Sign up</button>
+                </div>
+                        <form id="signin">
+                            <input type="text" placeholder="Email" required/>
+                            <i class="fas fa-envelope iEmail"></i>
+                            <input type="password" placeholder="Password" required/>
+                            <i class="fas fa-lock iPassword"></i>
+                            <div class="divCheck">
+                                <input type="checkbox"/>
+                                <span>Remeber Password</span>
+                            </div>
+                            <button type="submit" class="btn">Sign in</button>
+                        </form>
+                        <form id="signup">
+                            <input type="text" placeholder="Email" required/>
+                            <i class="fas fa-envelope iEmail"></i>
+                            <input type="password" placeholder="Password" required/>
+                            <i class="fas fa-lock iPassword2"></i>
+                            <div class="divCheck">
+                                <input type="checkbox" required/>
+                                <span>Terms</span>
+                            </div>
+                            <button type="submit" class="btn">Sign up</button>
+                        </form>
+            </div>
+                    <a href="#" class="close" ><img src="img/out.png" width="26" height="26" alt="fecha" id="btnClose"></a>
+        </div>
+
+    <br>
+        <div class="resume">
+            <div>
+                Entradas:R$
+                <span class="incomes">0.00</span>
+            </div>
+            <div>
+                Saidas:R$
+                <span class="expenses">0.00</span>
+            </div>
+            <div>
+                Total:R$
+                <span class="total">0.00</span>
+            </div>
+        </div>
+        <div class="newItem">
+            <div class="divDesc">
+                <label for="desc">Descrição</label>
+                <input type="text" id="desc"/>
+            </div>
+            <div class="divAmount">
+                <label for="amount">Valor</label>
+                <input type="number" id="amount"/>
+            </div>
+            <div class="divType">
+                <label for="type">Tipo</label>
+            <select id="type">
+                <option >Entrada</option>
+                <option >Saida</option>
+            </select>    
+            </div>
+            <button  class="btn" id="btnNew" >incluir</button>
+        </div>
+        <div class="divTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th class="columnAmount">Valor</th>
+                        <th class="columnType">Tipo</th>
+                        <th class="columnAction"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    
+        <script src="./assents/script.js/script.js"></script>
+    </main>
+    <!--javascript-->
+    <script src="assents/script.js/photo.js"></script>
+    <script src="assents/script.js/script.js"></script>
+    <script src="assents/script.js/app.js"></script>
+    <script src="assents/script.js/index.js"></script>
+</body>
+</html>
